@@ -7,8 +7,8 @@ const Contact = () => {
     {
       icon: '📧',
       label: 'Email',
-      value: 'luqmanafiq@example.com',
-      action: 'mailto:luqmanafiq@example.com',
+      value: 'luqmanafiq135.laq@gmail.com',
+      action: 'mailto:luqmanafiq135.la@gmail.com',
       color: 'primary'
     },
     {
