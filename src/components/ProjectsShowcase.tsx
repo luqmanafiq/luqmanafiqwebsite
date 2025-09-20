@@ -8,52 +8,123 @@ import PerspectiveSlider from './PerspectiveSlider';
 
 const projects = [
   {
-    id: 'league-nlp',
-    title: 'How to win League of Legends',
-    description: 'Built a NLP helper for League of Legends using Python, PyTorch, and Flask. Integrated machine learning to analyze trends from large datasets, with a user-friendly dashboard for real-time updates.',
-    icon: '🏆⚔️🎮',
-    tech: ['PyTorch', 'Gradio', 'NLP', 'Neural Network', 'RiotAPI'],
+    id: 'ai-lol',
+    title: 'AI + ML for League of Legends',
+    description: 'Analyzed 10k+ matches with Riot API, trained ML models (XGBoost, NN) for real-time win probability prediction and AI coaching with Caedrel-style tips.',
+    icon: '🎮🏆⚔️',
+    tech: ['Python', 'Scikit-learn', 'PyTorch', 'XGBoost', 'RiotAPI'],
     category: 'AI/ML',
     color: 'primary'
   },
   {
     id: 'mlops-youtube',
-    title: 'MLOps Pipeline – YouTube Viewer Sentiment',
-    description: 'Build an end-to-end MLOps pipeline that analyzes YouTube sentiment in real-time through a Chrome extension. Master modern ML tools like MLflow, DVC, Docker, and AWS while developing a complete solution from data collection to deployment.',
-    icon: '▶️▶️YouTube🔴🔴▶',
+    title: 'MLOps – YouTube Sentiment',
+    description: 'End-to-end pipeline for YouTube comment sentiment. Integrated AWS (S3, Lambda), MLflow, Docker, DVC with real-time Chrome extension interface.',
+    icon: '▶️🔴YT',
     tech: ['Python', 'AWS', 'Docker', 'MLflow', 'DVC'],
     category: 'MLOps',
     color: 'secondary'
   },
   {
-    id: 'health-app',
+    id: '4health',
     title: '4Health Web App',
-    description: 'A team-based web app to monitor daily health indicators (steps, sleep, calories, weight). Features interactive graphs and security measures, coordinated via GitHub.',
-    icon: '🏥🚑✚🏨',
-    tech: ['JavaScript', 'HTML', 'CSS', 'GitHub'],
+    description: 'Team-based project to monitor daily health indicators (steps, sleep, calories, weight). Features graphs and authentication.',
+    icon: '🏥🚑🏨',
+    tech: ['JavaScript', 'HTML', 'CSS'],
     category: 'Web App',
     color: 'accent'
   },
   {
-    id: 'serverless-bot',
+    id: 'aws-chatbot',
     title: 'AWS Serverless Chatbot',
-    description: 'A serverless chatbot built using AWS services for scalable and cost-effective conversational AI solutions.',
-    icon: '🤖',
-    tech: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'Serverless'],
+    description: 'A serverless chatbot leveraging AWS Lambda, API Gateway, and DynamoDB for scalable conversational AI.',
+    icon: '🤖☁️',
+    tech: ['AWS Lambda', 'API Gateway', 'DynamoDB'],
     category: 'Cloud',
     color: 'primary'
   },
   {
     id: 'portfolio',
     title: '3D Portfolio Website',
-    description: 'This interactive portfolio website featuring stunning 3D sliders and modern design elements built with React and CSS 3D transforms.',
-    icon: '🌟',
+    description: 'Interactive portfolio site with React, Tailwind, and CSS 3D transforms (cube, flip, stack, perspective).',
+    icon: '🌟💻',
     tech: ['React', 'TypeScript', 'CSS 3D', 'Tailwind'],
     category: 'Frontend',
     color: 'secondary'
+  },
+  {
+    id: 'battle-legends',
+    title: 'Battle Legends',
+    description: 'Multiplayer TypeScript game with real-time mechanics, inspired by classic arena combat.',
+    icon: '⚔️👾',
+    tech: ['TypeScript', 'WebSockets'],
+    category: 'Game',
+    color: 'accent'
+  },
+  {
+    id: 'reversi-game',
+    title: 'Reversi Game',
+    description: 'Java-based implementation of the board game Reversi with an AI opponent.',
+    icon: '♟️🕹️',
+    tech: ['Java'],
+    category: 'Game',
+    color: 'primary'
+  },
+  {
+    id: 'student-quiz',
+    title: 'Student Quiz System',
+    description: 'CLI-based quiz management system for Newcastle College with teacher and student views.',
+    icon: '📚📝',
+    tech: ['Java'],
+    category: 'Backend',
+    color: 'secondary'
+  },
+  {
+    id: 'rental-validator',
+    title: 'Rental Validator',
+    description: 'Python script to validate property rental listings with regex and data validation rules.',
+    icon: '🏠🐍',
+    tech: ['Python'],
+    category: 'Utility',
+    color: 'accent'
+  },
+  {
+    id: 'page-rank',
+    title: 'PageRank Algorithm',
+    description: 'Implemented Google’s PageRank in Python for graph ranking experiments.',
+    icon: '🔗📊',
+    tech: ['Python'],
+    category: 'Algorithms',
+    color: 'primary'
+  },
+  {
+    id: 'auction-house',
+    title: 'Auction House System',
+    description: 'Java system simulating auctions with bidding, persistence, and user management.',
+    icon: '💰🔨',
+    tech: ['Java'],
+    category: 'Backend',
+    color: 'secondary'
+  },
+  {
+    id: 'ipc',
+    title: 'Inter-Process Communication',
+    description: 'Java examples implementing IPC with sockets and shared memory.',
+    icon: '💻🔌',
+    tech: ['Java'],
+    category: 'Systems',
+    color: 'accent'
+  },
+  {
+    id: 'walking-panda',
+    title: 'Walking Panda 3D',
+    description: 'Python-based 3D panda simulation with movement logic.',
+    icon: '🐼🎨',
+    tech: ['Python'],
+    category: 'Graphics',
+    color: 'primary'
   }
 ];
-
 const sliderComponents = [CubeCarousel, CardStack3D, FlipCarousel, PerspectiveSlider];
 
 const ProjectsShowcase = () => {
