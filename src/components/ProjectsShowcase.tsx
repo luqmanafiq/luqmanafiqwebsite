@@ -217,13 +217,33 @@ const ProjectsShowcase = () => {
                 ))}
               </div>
 
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="w-full border-primary/20 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
+              <div className="flex gap-2">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="w-1/2 border-primary/20 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
+            >
+              Live Demo
+            </Button>
+          
+            {project.github && (
+              <a 
+                href={project.github} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-1/2"
               >
-                View Project
-              </Button>
+                <Button 
+                  variant="default" 
+                  size="sm" 
+                  className="w-full bg-gray-900 text-white hover:bg-gray-700 transition-all duration-300"
+                >
+                  GitHub
+                </Button>
+              </a>
+            )}
+          </div>
+
             </div>
           ))}
         </div>
